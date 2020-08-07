@@ -25,8 +25,7 @@ class dustbin
 	display()
 	{
 			var posBottom=this.bottomBody.position;
-			var posLeft=this.leftWallBody.position;
-			var posRight=this.rightWallBody.position;
+	
 
 			push()
 			translate(posBottom.x, posBottom.y);
