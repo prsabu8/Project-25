@@ -5,19 +5,10 @@ const Body = Matter.Body;
 const Render = Matter.Render;
 var dustbinObj, paperObject,groundObject	
 var world;
-var bin, binImg;
-
-function preload(){
-	binImg = loadImage("dustbingreen.png");
-}
 
 function setup() {
 	createCanvas(1600, 700);
 	rectMode(CENTER);
-
-	bin = createSprite(1200, 650, 100, 100);
-	bin.addImage(binImg);
-	bin.scale = 0.5
 	
 	engine = Engine.create();
 	world = engine.world;
@@ -47,10 +38,9 @@ function draw() {
   rectMode(CENTER);
   background("grey");
   
-  dustbinObj.display();
   paperObject.display();
   groundObject.display();
-  
+  dustbinObj.display();
  
   
   
